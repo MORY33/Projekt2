@@ -1,17 +1,16 @@
 package com.company;
 
-import static com.company.Sortit.MovieList;
+import java.io.IOException;
+import java.util.ArrayList;
+
 
 public class Main {
-    public static void main(String[] args){
-//        System.out.println("gowno");
-//        ArrayList<String> cars = new ArrayList<String>();
-//        cars.add("Volvo");
-//        cars.add("BMW");
-//        cars.add("Ford");
-//        cars.add("Mazda");
-//        System.out.println(cars);
-        MovieList();
+    public static void main(String[] args) throws IOException {
+
+        MoviesList tempList = new MoviesList();
+        tempList.CreateList();
+        Menu menu = new Menu();
+        menu.menu();
 
     }
 }
